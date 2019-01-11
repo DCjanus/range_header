@@ -1,0 +1,10 @@
+byte_ranges_specifier = { SOI ~ "bytes=" ~  byte_range_set ~ EOI}
+byte_range_set = _{ byte_range_spec ~ ( "," ~ byte_range_spec? )* }
+byte_range_spec = _{ from_to_all | from_to | last }
+
+from_to = { digit ~ "-" }
+from_to_all = { digit ~ "-" ~ digit }
+last = { "-" ~ digit }
+digit = @{ ASCII_DIGIT+ }
+
+COMMENT = _{ " "+ }
