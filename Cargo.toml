@@ -1,7 +1,7 @@
 [package]
 name = "range_header"
 description = "HTTP Range header parser"
-version = "0.1.0"
+version = "0.2.0"
 license = "MIT"
 authors = ["DCjanus <DCjanus@dcjanus.com>"]
 repository = "https://github.com/DCjanus/range_header"
@@ -14,5 +14,5 @@ exclude = [
 ]
 
 [dependencies]
-pest = "2"
-pest_derive = "2"
+pest = "2.1.0"
+pest_derive = "2.1.0"

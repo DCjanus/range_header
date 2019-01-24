@@ -1,1 +1,3 @@
-pub mod byte_range;
+pub use byte_range::ByteRange;
+
+mod byte_range;
